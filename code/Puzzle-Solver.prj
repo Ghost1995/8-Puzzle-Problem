@@ -1,0 +1,69 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1659027893" file="D:\Adventure Island\Study\Extras\GitHub\8-Puzzle-Problem\code\Puzzle-Solver.prj" location="D:\Adventure Island\Study\Extras\GitHub\8-Puzzle-Problem\code" name="Puzzle-Solver" target="target.mlapps" target-name="Package App">
+    <param.appname>Puzzle-Solver</param.appname>
+    <param.authnamewatermark>Ashwin Goyal</param.authnamewatermark>
+    <param.email>ashgo95@terpmail.umd.edu</param.email>
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary>It is a basic app used for solving a 8-puzzle-problem.</param.summary>
+    <param.description />
+    <param.screenshot>C:\Users\aashg\AppData\Local\Temp\tp91f9d071_ed86_4f39_bbe8_819ac4b746aa.png</param.screenshot>
+    <param.version>2.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>D:\Adventure Island\Study\Extras\GitHub\8-Puzzle-Problem\code</param.output>
+    <param.guid>454b4b1d-3ed2-4d0e-ac1e-4cbf7dca1fab</param.guid>
+    <unset>
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.description />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\PuzzleSolver.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="D:\Adventure Island\Study\Extras\GitHub\8-Puzzle-Problem" name="code" optional="false">D:\Adventure Island\Study\Extras\GitHub\8-Puzzle-Problem\code</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>D:\Adventure Island\Softwares\MATLAB\R2018b</root>
+      <toolboxes>
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
