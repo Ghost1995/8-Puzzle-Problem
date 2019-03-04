@@ -37,7 +37,14 @@ function plotPath(nodePath)
     pause on
     index = [3 2 1];
     [currRow, currCol] = find(currentNode == 0);
+    totalSteps = num2str(size(nodePath, 3) - 1);
     for n = 2:size(nodePath, 3)
+        % Display the step being executed
+        clc
+        disp(['Currently at Layer ' totalSteps ' of the Search Tree']);
+        disp(['Executing step ' num2str(n-1) ' of ' totalSteps ' steps.']);
+        
+        % Start executing the motion
         nextNode = nodePath(:, :, n);
         [nextRow, nextCol] = find(nextNode == 0);
         traverse = double([linspace(3.075-index(nextCol), 3.075-index(currCol)); linspace(index(nextRow)-0.925, index(currRow)-0.925);...

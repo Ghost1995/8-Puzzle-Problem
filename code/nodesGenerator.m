@@ -41,6 +41,7 @@ function NodeSet = nodesGenerator(initialNode, goalNode)
         currNodeIndex = currNodeIndex + 1;
         c2c = NodesInfo(currNodeIndex,3) + 1;
         if c2c > oldCost
+            clc
             disp(['Currently at Layer ' num2str(c2c) ' of the Search Tree']);
             oldCost = c2c;
         end
