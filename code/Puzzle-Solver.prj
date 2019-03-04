@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1659027893" file="D:\Adventure Island\Study\Extras\GitHub\8-Puzzle-Problem\code\Puzzle-Solver.prj" location="D:\Adventure Island\Study\Extras\GitHub\8-Puzzle-Problem\code" name="Puzzle-Solver" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3080078075" file="D:\Adventure Island\Study\Extras\GitHub\8-Puzzle-Problem\code\Puzzle-Solver.prj" location="D:\Adventure Island\Study\Extras\GitHub\8-Puzzle-Problem\code" name="Puzzle-Solver" target="target.mlapps" target-name="Package App">
     <param.appname>Puzzle-Solver</param.appname>
     <param.authnamewatermark>Ashwin Goyal</param.authnamewatermark>
     <param.email>ashgo95@terpmail.umd.edu</param.email>
@@ -9,7 +9,7 @@
     <param.summary>It is a basic app used for solving a 8-puzzle-problem.</param.summary>
     <param.description />
     <param.screenshot>C:\Users\aashg\AppData\Local\Temp\tp91f9d071_ed86_4f39_bbe8_819ac4b746aa.png</param.screenshot>
-    <param.version>2.0</param.version>
+    <param.version>3.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
