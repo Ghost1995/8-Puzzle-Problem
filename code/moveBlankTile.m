@@ -1,29 +1,22 @@
-function [newNode, status] = moveBlankTile(currentNode, direction)
-% This function shifts the blank space in the given direction if possible
-% and returns the new node generated. If moving in the given direction is
+function [status, newNode, newNodeNum] = moveBlankTile(currentNode)
+% This function shifts the blank space in all possible directions and
+% returns the new node generated. If moving in the given direction is
 % not possible, then it returns the status as false.
 
-[row, col] = find(currentNode == 0);
-if strcmp(direction, 'up') && (row ~= 1)
-    newRow = row - 1;
-    newCol = col;
-elseif strcmp(direction, 'down') && (row ~= 3)
-    newRow = row + 1;
-    newCol = col;
-elseif strcmp(direction, 'left') && (col ~= 1)
-    newRow = row;
-    newCol = col - 1;
-elseif strcmp(direction, 'right') && (col ~= 3)
-    newRow = row;
-    newCol = col + 1;
-else
-    newNode = [];
-    status = false;
-    return;
-end
-newNode = currentNode;
-newNode(row, col) = currentNode(newRow, newCol);
-newNode(newRow, newCol) = currentNode(row, col);
-status = true;
+    movement = [1 0; 0 1; -1 0; 0 -1]; % [up, right, down, left]
+    status = false(4,1);
+    newNode = zeros(3,3,4);
+    newNodeNum = zeros(4,1);
+    [row, col] = find(currentNode == 0);
+    for i = 1:4
+        newPos = [row, col] + movement(i,:);
+        status(i) = all(newPos > 0) && all(newPos < 4);
+        if status(i)
+            newNode(:,:,i) = currentNode;
+            newNode(row,col,i) = newNode(newPos(1),newPos(2),i);
+            newNode(newPos(1),newPos(2),i) = 0;
+            newNodeNum(i) = nodeNumber(newNode(:,:,i));
+        end
+    end
 
 end
